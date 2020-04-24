@@ -1,9 +1,253 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>RCA Competitions</title>
-</head>
-<body>
-<h3>This site is brand new, and needs some code first. Give our site devs up to a week to get the site fully operational!</h3>
-</body>
+	<head>
+		<title>RCA Competitions</title>
+		<link rel="icon" href="favicon.ico">
+		<style>
+			@font-face{font-family:b;src: url(f/b.otf)}
+			@font-face{font-family:i;src: url(f/i.otf)}
+			@font-face{font-family:l;src: url(f/l.otf)}
+			@font-face{font-family:r;src: url(f/r.otf)}
+			.header{position:absolute;height:10vh;width:100vw;background-image:radial-gradient(#55f,#22a);left:0%;top:0%;}
+			a{text-decoration:none;color:black;font-family:r;}
+			.title{position:absolute;font-family:b;font-size:24px;left:39.2%;top:-5%;}
+			.scramblelink{position:absolute;top:2vh;left:30.8%;border:10px solid #B60;background-color:#B60;}
+			.submitlink{position:absolute;top:2vh;right:30.8%;border:10px solid #B60;background-color:#B60;}
+			body{height:100%;margin:0;background-attachment:fixed;background-image:radial-gradient(#aaa,#455);overflow-x:hidden;}
+			.results{background-color:#EEE;position:absolute;border:2px solid black;top:12%;right:2%;width:15%;}
+			ol{color:green;font-family:b;}
+			.wintitle{position:relative;left:13%;font:14pt b;}
+			.solvebox{position:absolute;left:5%;top:12%;font-family:r;background-color:#EEE;width:75%}
+			.breakdown{position:relative;background-color:white;border:2px solid black;border-collapse:collapse;}
+			.scramble,.person,.times,.event{border:1px solid black;}
+			h1,h2,h3,h4{font-family:b;}
+			.scramble{font-size:8pt;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr class="header">
+				<!--<td class="scrambletab">
+					<a href="/scrambles" class="scramblelink">Scrambles</a>
+				</td>-->
+				<td class="titlebox">
+					<h3 class="title">RCA Comp #27 Results</h3>
+				</td>
+				<!--<td class="submit">
+					<a href="/submit" class="submitlink">Submit Times</a>
+				</td>-->
+			</tr>
+		</table>
+		<div class="results">
+			<h3 class="wintitle">2x2</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">3x3</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">4x4</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">5x5</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">6x6</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">7x7</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">Pyraminx</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">Skewb</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">Square-1</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">3BLD</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">3OH</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+			<hr>
+			<h3 class="wintitle">Megaminx</h3>
+			<ol>
+				<li>Person 1</li>
+				<li>Person 2</li>
+				<li>Person 3</li>
+				<li>Person 4</li>
+				<li>Person 5</li>
+			</ol>
+		</div>
+		<div class="solvebox">
+			<table class="breakdown" id="2x2">
+			  	<tr>
+			  		<th class="event">2x2</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 1</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+					<td class="person">Person 2</td>
+			  	  	<td class="times">Solve 1</td>
+			  	  	<td class="times">Solve 2</td>
+			  	  	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 3</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+					<td class="person">Person 4</td>
+			  	  	<td class="times">Solve 1</td>
+			  	  	<td class="times">Solve 2</td>
+			  	  	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 5</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			 </table>
+			 <table class="breakdown" id="3x3">
+			  	<tr>
+			  		<th class="event">3x3</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			    	<th class="scramble">B2 R2 F2 U2 L2 U' L2 F2 D' B L2 B2 L2 U' F' R D F2 U' F</th>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 1</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+					<td class="person">Person 2</td>
+			  	  	<td class="times">Solve 1</td>
+			  	  	<td class="times">Solve 2</td>
+			  	  	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 3</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+					<td class="person">Person 4</td>
+			  	  	<td class="times">Solve 1</td>
+			  	  	<td class="times">Solve 2</td>
+			  	  	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			  	<tr>
+			    	<td class="person">Person 5</td>
+			    	<td class="times">Solve 1</td>
+			    	<td class="times">Solve 2</td>
+			    	<td class="times">Solve 3</td>
+			    	<td class="times">Solve 4</td>
+			    	<td class="times">Solve 5</td>
+			  	</tr>
+			 </table>
+		</div>
+	</body>
 </html>
