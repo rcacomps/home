@@ -5,92 +5,71 @@
 		<link rel="icon" href="favicon.ico">
 		<style>
 			@font-face{font-family:b;src:url(f/b.otf)}
-			@font-face{font-family:i;src:url(f/i.otf)}
-			@font-face{font-family:l;src:url(f/l.otf)}
 			@font-face{font-family:r;src:url(f/r.otf)}
+			@keyframes fadeEffect{from{opacity:0}to{opacity:1}}
 			.tabh{overflow:hidden;background-color:#eee}
 			.tabh button{float:left;border:none;outline:0;cursor:pointer;padding:14px 16px;transition:.3s}
-			.tlh:hover{background-color:#ddd}
-			.tlh .active{background-color:#ccc}
-			.tch,.tcv{display:none;animation:fadeEffect .35s}
-			@keyframes fadeEffect{from{opacity:0}to{opacity:1}}
-			*{box-sizing:border-box}
-			.tabv{float:left;background-color:#eee;width:30%;height:300px}
-			.tabv button{display:block;padding:22px 16px;width:100%;border:none;outline:0;text-align:left;cursor:pointer;transition:.3s}
+			button:hover{background-color:#ddd}
+			button .d{background-color:#ccc}
+			.q,.h,.k,.y{display:none;animation:fadeEffect .35s}
+			.g,.j,.b{float:left;background-color:#eee;}
+			.g button,.j button,.b button{display:block;padding:22px 16px;cursor:pointer;transition:.3s}
 		</style>
 	</head>
 	<body>
-		<header>
-			This is thuh header
-		</header>
 		<div class="tabh">
-			<button class="tlh" onclick="mEvent(event, '2x2')">2x2</button>
-			<button class="tlh" onclick="mEvent(event, '3x3')">3x3</button>
-			<button class="tlh" onclick="mEvent(event, '4x4')">4x4</button>
+			<button onclick="u('2x2','q')">2x2</button>
+			<button onclick="u('3x3','q')">3x3</button>
+			<button onclick="u('4x4','q')">4x4</button>
 		</div>
-		<div id="2x2" class="tch">
-			<div class="tabv">
-				<button class="tlh" onclick="sEvent(event, 'pone')">Person 1</button>
-				<button class="tlh" onclick="sEvent(event, 'ptwo')">Person 2</button>
-				<button class="tlh" onclick="sEvent(event, 'pthree')">Person 3</button>
+		<div id="2x2" class="q">
+			<div class="g">
+				<button onclick="u('pone','h')">Person 1</button>
+				<button onclick="u('ptwo','h')">Person 2</button>
+				<button onclick="u('pthree','h')">Person 3</button>
 			</div>
-			<div id="pone" class="tcv">
+			<div id="pone" class="h">
 				Person 1 Results
 			</div>
-			<div id="ptwo" class="tcv">
+			<div id="ptwo" class="h">
 				Person 2 Results
 			</div>
-			<div id="pthree" class="tcv">
+			<div id="pthree" class="h">
 				Person 3 Results
 			</div>
 		</div>
-		<div id="3x3" class="tch">
-			<div class="tabv">
-				<button class="tlh" onclick="sEvent(event, 'pone')">Person 1</button>
-				<button class="tlh" onclick="sEvent(event, 'ptwo')">Person 2</button>
-				<button class="tlh" onclick="sEvent(event, 'pthree')">Person 3</button>
+		<div id="3x3" class="q">
+			<div class="j">
+				<button onclick="u('zone','k')">Person 1</button>
+				<button onclick="u('ztwo','k')">Person 2</button>
+				<button onclick="u('zthree','k')">Person 3</button>
 			</div>
-			<div id="pone" class="tcv">
+			<div id="zone" class="k">
 				Person 1 Results
 			</div>
-			<div id="ptwo" class="tcv">
+			<div id="ztwo" class="k">
 				Person 2 Results
 			</div>
-			<div id="pthree" class="tcv">
+			<div id="zthree" class="k">
 				Person 3 Results
 			</div>
 		</div>
-		<div id="4x4" class="tch">
-			<div class="tabv">
-				<button class="tlh" onclick="sEvent(event, 'pone')">Person 1</button>
-				<button class="tlh" onclick="sEvent(event, 'ptwo')">Person 2</button>
-				<button class="tlh" onclick="sEvent(event, 'pthree')">Person 3</button>
+		<div id="4x4" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
 			</div>
-			<div id="pone" class="tcv">
+			<div id="wone" class="y">
 				Person 1 Results
 			</div>
-			<div id="ptwo" class="tcv">
+			<div id="wtwo" class="y">
 				Person 2 Results
 			</div>
-			<div id="pthree" class="tcv">
+			<div id="wthree" class="y">
 				Person 3 Results
 			</div>
 		</div>
-		<script>
-			function mEvent(e,t){
-				for(var a,l=document.getElementsByClassName("tch"),n=0;n<l.length;n++)
-					l[n].style.display="none";
-				for(a=document.getElementsByClassName("tlh"),n=0;n<a.length;n++)
-					a[n].className=a[n].className.replace(" active","");
-				document.getElementById(t).style.display="block",e.currentTarget.className+=" active"
-			}
-			function sEvent(e,t){
-				for(var a,l=document.getElementsByClassName("tcv"),n=0;n<l.length;n++)
-					l[n].style.display="none";
-				for(a=document.getElementsByClassName("tlv"),n=0;n<a.length;n++)
-					a[n].className=a[n].className.replace(" active","");
-				document.getElementById(t).style.display="block",e.currentTarget.className+=" active"
-			}
-		</script>
+		<script>function u(e,t){for(var a,l=document.getElementsByClassName(t),n=0;n<l.length;n++)l[n].style.display="none";for(a=document.getElementsByTagName("BUTTON"),n=0;n<a.length;n++)a[n].className=a[n].className.replace(" d","");document.getElementById(e).style.display="block",event.currentTarget.className+=" d"}</script>
 	</body>
 </html>
