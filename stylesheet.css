@@ -1,0 +1,19 @@
+@font-face{font-family:b;src:url(f/b.otf)}
+@font-face{font-family:r;src:url(f/r.otf)}
+@keyframes fadeEffect{from{opacity:0}to{opacity:1}}
+body{background-color:#1b4eff;overflow:hidden;}
+.r{width:90vw;margin-left:2.5vw;overflow-y:scroll;height:70px;background-color:#eee}
+.r button{float:left;display:block;border:none;outline:0;cursor:pointer;padding:14px 16px}
+button:hover{background-color:#ddd}
+button .d{background-color:#ccc}
+button{font:12pt b;}
+.submitbtn{background-color:#20ed06;}
+.submitbtn:hover{background-color:#00cd00;}
+h2{font:16pt b;}
+.logo{height:45px;margin-bottom:2.5px;}
+.header{height:50px;}
+.title{display:inline;position:absolute;top:0px;width:auto;left:60px;}
+.q,.h,.k,.y{display:none;animation:fadeEffect .35s;font:12pt r;background-color:white;}
+.g,.j,.btwo,.bthree,.bfour,.bfive{float:left;background-color:#eee;}
+#submit{padding:10px;}
+.g button,.j button,.btwo button,.bthree button,.bfour button,.bfive button{display:block;padding:22px 16px;cursor:pointer}

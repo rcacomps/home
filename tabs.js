@@ -1,0 +1,1 @@
+function u(e,t){for(var a,l=document.getElementsByClassName(t),n=0;n<l.length;n++)l[n].style.display="none";for(a=document.getElementsByTagName("BUTTON"),n=0;n<a.length;n++)a[n].className=a[n].className.replace(" d","");document.getElementById(e).style.display="block",event.currentTarget.className+=" d"}

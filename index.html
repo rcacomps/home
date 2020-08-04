@@ -4,46 +4,66 @@
 		<title>RCA Comp #37 Results</title>
 		<link rel="icon" href="favicon.ico">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<style>
-			@font-face{font-family:b;src:url(f/b.otf)}
-			@font-face{font-family:r;src:url(f/r.otf)}
-			@keyframes fadeEffect{from{opacity:0}to{opacity:1}}
-			.r{overflow:hidden;background-color:#eee}
-			.r button{float:left;border:none;outline:0;cursor:pointer;padding:14px 16px}
-			button:hover{background-color:#ddd}
-			button .d{background-color:#ccc}
-			.q,.h,.k,.y{display:none;animation:fadeEffect .35s}
-			.g,.j,.b{float:left;background-color:#eee;}
-			.g button,.j button,.b button{display:block;padding:22px 16px;cursor:pointer}
-		</style>
-	 </head>
+		<link rel="stylesheet" href="stylesheet.css"/>
+		<script src="tabs.js"></script>
+	</head>
 	<body>
+		<div class="header">
+			<img class="logo" src="favicon.ico"/>
+			<h2 class="title">RCA Comp #40 Results</h2>
+		 </div>
 		<div class="r">
+			<button class="submitbtn" onclick="u('submit','q')">Submit Times</button>
 			<button onclick="u('2x2','q')">2x2</button>
 			<button onclick="u('3x3','q')">3x3</button>
 			<button onclick="u('4x4','q')">4x4</button>
+			<button onclick="u('5x5','q')">5x5</button>
+			<button onclick="u('6x6','q')">6x6</button>
+			<button onclick="u('7x7','q')">7x7</button>
+			<button onclick="u('Square1','q')">Square-1</button>
+			<button onclick="u('Pyraminx','q')">Pyraminx</button>
+			<button onclick="u('Megaminx','q')">Megaminx</button>
+			<button onclick="u('Kilominx','q')">Kilominx</button>
+			<button onclick="u('4x4','q')">3BLD</button>
+			<button onclick="u('4x4','q')">FMC</button>
+			<button onclick="u('4x4','q')">3OH</button>
+			<button onclick="u('4x4','q')">Clock</button>
+			<button onclick="u('4x4','q')">Skewb</button>
+			<button onclick="u('4x4','q')">2BLD</button>
+			<button onclick="u('4x4','q')">Mirror Blocks</button>
+			<button onclick="u('4x4','q')">2-4 Relay</button>
 		 </div>
 		<div id="2x2" class="q">
-			<div class="g">
-				<button onclick="u('pone','h')">Person 1</button>
-				<button onclick="u('ptwo','h')">Person 2</button>
-				<button onclick="u('pthree','h')">Person 3</button>
-			</div>
-			<div id="pone" class="h">Person 1 Results</div>
-			<div id="ptwo" class="h">Person 2 Results</div>
-			<div id="pthree" class="h">Person 3 Results</div>
+			<div class="btwo">
+				<button onclick="u('twoone','h')">Person 1</button>
+				<button onclick="u('twotwo','h')">Person 2</button>
+				<button onclick="u('twothree','h')">Person 3</button>
+			 </div>
+			<div id="twoone" class="h">Person 1 Results</div>
+			<div id="twotwo" class="h">Person 2 Results</div>
+			<div id="twothree" class="h">Person 3 Results</div>
 		 </div>
 		<div id="3x3" class="q">
-			<div class="j">
-				<button onclick="u('zone','k')">Person 1</button>
-				<button onclick="u('ztwo','k')">Person 2</button>
-				<button onclick="u('zthree','k')">Person 3</button>
-			</div>
-			<div id="zone" class="k">Person 1 Results</div>
-			<div id="ztwo" class="k">Person 2 Results</div>
-			<div id="zthree" class="k">Person 3 Results</div>
+			<div class="bthree">
+				<button onclick="u('threeone','k')">Person 1</button>
+				<button onclick="u('threetwo','k')">Person 2</button>
+				<button onclick="u('threethree','k')">Person 3</button>
+			 </div>
+			<div id="threeone" class="k">Person 1 Results</div>
+			<div id="threetwo" class="k">Person 2 Results</div>
+			<div id="threethree" class="k">Person 3 Results</div>
 		 </div>
 		<div id="4x4" class="q">
+			<div class="bfour">
+				<button onclick="u('fourone','y')">Person 1</button>
+				<button onclick="u('fourtwo','y')">Person 2</button>
+				<button onclick="u('fourthree','y')">Person 3</button>
+			</div>
+			<div id="fourone" class="y">Person 1 Results</div>
+			<div id="fourtwo" class="y">Person 2 Results</div>
+			<div id="fourthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="5x5" class="q">
 			<div class="b">
 				<button onclick="u('wone','y')">Person 1</button>
 				<button onclick="u('wtwo','y')">Person 2</button>
@@ -53,6 +73,75 @@
 			<div id="wtwo" class="y">Person 2 Results</div>
 			<div id="wthree" class="y">Person 3 Results</div>
 		 </div>
-		<script>function u(e,t){for(var a,l=document.getElementsByClassName(t),n=0;n<l.length;n++)l[n].style.display="none";for(a=document.getElementsByTagName("BUTTON"),n=0;n<a.length;n++)a[n].className=a[n].className.replace(" d","");document.getElementById(e).style.display="block",event.currentTarget.className+=" d"}</script>
+		<div id="6x6" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="7x7" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="Square1" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="Pyraminx" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="Megaminx" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="Kilominx" class="q">
+			<div class="b">
+				<button onclick="u('wone','y')">Person 1</button>
+				<button onclick="u('wtwo','y')">Person 2</button>
+				<button onclick="u('wthree','y')">Person 3</button>
+			</div>
+			<div id="wone" class="y">Person 1 Results</div>
+			<div id="wtwo" class="y">Person 2 Results</div>
+			<div id="wthree" class="y">Person 3 Results</div>
+		 </div>
+		<div id="submit" class="q">
+			<h2 class="subttl">How to Submit Times</h2>
+			<h4>1. Scramble</h4>
+			<p>Click <a href="/scrambles">this link</a> to view the latest set of scrambles.</p>
+			<h4>2. Solve</h4>
+			<p>There are no time limits or cutoffs, just solve and have fun!</p>
+			<h4>3. Submit</h4>
+			<p>Fill out the form below by selecting an event, entering times, and submitting.
+			Your scramble may take up to a day to show up in the results tabs above.</p>
+		 </div>
 	 </body>
  </html>
